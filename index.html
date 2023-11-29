@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body><!-- "con c minicuscula y tabulador se crean los comentarios" -->
+<!-- las imagnes tienen que ser en .jpg y a ser posible de las mismas dimenciones -->
+
+    <!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Mauricio</a><!-- se pone nombre -->
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-resposive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+ 
+    <!--SECCION DE INICIO-->
+    <section id= "inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contendor-img">
+                <img src="img/foto1.png" alt="">    <!--aqui va foto de perfil-->
+            </div>
+            <h3>Mauricio Chasi</h3>
+            <h4>Desarrollador Junior</h4>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/mauriciochasi/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi"  class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Mauricio Chasi.</span> una persona motivada, dinamica y creativa que no me intimidan los nuevos retos y desafios.
+            Me destaco porque aprendo y me adapto rapido a las necesidades que requiere el trabajo.
+            Me gusta trabajar en equipo, aprender de mis compañero y aportar todo lo que pueda para la solucion de un problema.
+            Me he formado y he adquirido conocimiento del desarrollo de software de manera autodidacta, realizando Bootcamps y cursos online. 
+            Me siento comodo trabajando con python, pero sigo con mi formación aprendiendo mas tecnologias, como SQL o Java.
+            Ademas tengo conocimientos, de manejo de software como MySQL, Excel,Power Bi, Eclipse y Visual Studio Code.
+            Me mudé a Irlanda por 8 meses para mejorar mi nivel de ingles, eso me ha permitido conocer una cultura y pais maravilloso.
+            Puedes encontrar mas informacion en mis perfiles de Linkedin, Github o Infojobs. </p>
+
+            <div class="fila">
+                <!--datos personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                        <strong>Cumpleaños</strong>
+                        30-12-1989
+                        </li>
+                        <li>
+                        <strong>Teléfono</strong>
+                        650190734
+                        </li>
+                        <li>
+                        <strong>Email</strong>
+                        mauriciochasi@gmail.com
+                        </li>
+                        <li>
+                        <strong>Linkedin</strong>
+                        <a href="https://www.linkedin.com/in/mauriciochasi/" 
+                        target="_blank">www.linkedin.com/in/mauriciochasi/ </a>
+                        </li>
+                        <li>
+                            <strong>Github </strong>
+                            <a href="https://github.com/mauricioatm20" target="_blank">www.github.com/mauricioatm20</a>
+                        </li>
+                        <li>
+                        <strong>Cargo</strong>
+                        <span>Desarrollador Junior</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--interes-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+
+                        <div class="interes">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                        <i class="fa-solid fa-music"></i>
+                        <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                        <i class="fa-solid fa-futbol"></i>
+                        <span>FUTBOL</span> 
+                        </div>
+                        <div class="interes">
+                        <i class="fa-solid fa-plane"></i>
+                        <span>VIAJAR</span>
+                        </div>
+                        
+                    </div>
+                </div> 
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    
+    <!--SECCION SKILL-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Tecnical skill -->
+                <div class="col">
+                    <h3>Habilidades Techicas </h3>
+                    <div class="skill">
+                        <span>JAVA</span>
+                        <div class="barra-skill">
+                            <div class="progreso"> <!-- se escribe javascript delante de progreso para ver un animacion de porcentaje -->
+                            <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>EXCEL</span>
+                        <div class="barra-skill">
+                            <div class=" progreso">
+                            <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PYTHON</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Profesionales </h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Compromiso</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                            <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    
+                    <div class="item izq">
+                        <h4>Programación Java y MySQL</h4>
+                        <span class="casa">Centro Nacional de Tegnologia Getafe</span>
+                        <sapn class="fecha">2023</sapn>
+                        <p>Formacion en programacion orientada a objetos y base de datos relacionales.</p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Programación Python</h4>
+                        <span class="casa">Comunidad de Madrid</span>
+                        <sapn class="fecha">2022</sapn>
+                        <p>Formacion de programacion orientada al analisis y visualizacion de datos.
+                        </p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                    </div>
+                </div>
+                <!-- EXPERIENCIA -->
+                <div class="col derecha">
+                    <h3>Experiencia</h3>
+                    <div class="item der">
+                        <h4>Excel</h4>
+                        <span class="casa"></span><!-- nombre de la compañia -->
+                        <sapn class="fecha">2022</sapn>
+                        <p>Proyectos de organizacion, transformacion y calculo de datos, </p><!-- comentarios de las ocupaciones -->
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Power Bi</h4>
+                        <span class="casa"></span><!-- nombre de la compañia -->
+                        <sapn class="fecha">2022</sapn>
+                        <p>Proyectos de visualizacion interactivas y dinamicas de datos. </p><!-- comentarios de las ocupaciones -->
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portafolio" class="portafolio">     <!-- atajo ejemplo: section#portafiolio.portafolio -->
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/creat.jpg" alt="">
+                    <div class="overlay">
+                      <h3>Creatividad</h3>
+                      <p>Proyectos</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/power.jpg" alt="">
+                    <div class="overlay">
+                      <h3>Visualizacion</h3>
+                      <p>Grafico de datos </p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/produc.jpg" alt="">
+                    <div class="overlay">
+                      <h3>Trabajo en equipo</h3>
+                      <p>Productividad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Telefono">
+                    <input type="text" placeholder="Email">
+                    <textarea name=" " id="" cols="30" rows="10" placeholder="mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-sharp fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1519.759753797714!2d-3.6695493723616375!3d40.37517729195097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1672742006102!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                España 28053 Madrid 
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Contacto: 650190734
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                email: mauriciochasi@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+             <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/mauriciochasi/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></>
+            
+        </div>
+     </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
